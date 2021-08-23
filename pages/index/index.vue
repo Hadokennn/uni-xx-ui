@@ -1,0 +1,50 @@
+<template>
+  <view class="content">
+    <image class="logo" src="../../static/logo.png"></image>
+    <view>
+      <text class="title">{{ title }}</text>
+    </view>
+    <avator></avator>
+  </view>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  setup() {
+    return {
+      title: "hello"
+    };
+  },
+});
+</script>
+
+<style lang="scss">
+.content {
+  text-align: center;
+  height: 400upx;
+}
+
+.logo {
+  height: 200upx;
+  width: 200upx;
+  margin-top: 200upx;
+}
+
+.title {
+  font-size: 36upx;
+  color: #8f8f94;
+}
+.cc-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+  background: #c0c4cc;
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+</style>
